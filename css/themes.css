@@ -1,0 +1,87 @@
+/* Themes CSS - Theme variations (Grey, Dark, Light) from P1.express app */
+
+/* Dark Theme */
+html.theme-dark {
+    --color-bg: #1d2125;
+    --color-surface: #282c34;
+    --color-border: #3a3f44;
+    --color-text-primary: #d1d5db;
+    --color-text-secondary: #909296;
+    --color-accent: #60a5fa;
+    --color-accent-hover: #3b82f6;
+}
+
+html.theme-dark .header {
+    background-color: var(--color-bg);
+}
+
+html.theme-dark .hamburger,
+html.theme-dark .hamburger::before,
+html.theme-dark .hamburger::after {
+    background-color: var(--color-text-primary);
+}
+
+html.theme-dark .section-download {
+    background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+}
+
+html.theme-dark .footer {
+    background-color: #0d0f11;
+}
+
+/* Grey Theme (Default) */
+html.theme-grey {
+    --color-bg: #2f2f2f;
+    --color-surface: #3c3c3c;
+    --color-border: #505050;
+    --color-text-primary: #e0e0e0;
+    --color-text-secondary: #b0b0b0;
+    --color-accent: #60a5fa;
+    --color-accent-hover: #3b82f6;
+}
+
+html.theme-grey .header {
+    background-color: var(--color-bg);
+}
+
+html.theme-grey .hamburger,
+html.theme-grey .hamburger::before,
+html.theme-grey .hamburger::after {
+    background-color: var(--color-text-primary);
+}
+
+html.theme-grey .section-download {
+    background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+}
+
+html.theme-grey .footer {
+    background-color: #1f1f1f;
+}
+
+/* Light Theme */
+html.theme-light {
+    --color-bg: #ffffff;
+    --color-surface: #fafafa;
+    --color-border: #e0e0e0;
+    --color-text-primary: #172b4d;
+    --color-text-secondary: #5e6c84;
+    --color-accent: #0052cc;
+    --color-accent-hover: #0747a6;
+}
+
+html.theme-light .section-download {
+    background: linear-gradient(135deg, #0052cc 0%, #7c3aed 100%);
+}
+
+html.theme-light .footer {
+    background-color: #172b4d;
+}
+
+/* Theme transition */
+html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html * {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}

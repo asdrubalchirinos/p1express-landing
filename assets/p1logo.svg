@@ -1,0 +1,18 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	height="80"
+	width="80"
+	viewBox="200 200 600 600"
+	role="img"
+	aria-hidden="true"
+>
+
+	<g stroke="black" stroke-width="12" >
+		<circle cx="500" cy="500" r="292" fill="#f3c738" />
+		<circle cx="500" cy="572" r="220" fill="#c29f2d" />
+		<circle cx="500" cy="647" r="142" fill="#927722" />
+		<circle cx="500" cy="716" r="072" fill="#000000" />
+	</g>
+
+</svg>
+

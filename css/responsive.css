@@ -1,0 +1,232 @@
+/* Responsive CSS - Mobile-first responsive design */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    /* Typography adjustments */
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.875rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    /* Spacing adjustments */
+    .section {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .hero {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    /* Navigation */
+    .nav {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    /* Hero section */
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        font-size: 0.8125rem;
+    }
+    
+    .stat-separator {
+        display: none;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+    }
+    
+    /* Cards grid */
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    /* Features grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    /* Content box */
+    .content-box {
+        padding: var(--spacing-lg);
+    }
+    
+    /* Download section */
+    .download-title {
+        font-size: 2rem;
+    }
+    
+    .download-subtitle {
+        font-size: 1rem;
+    }
+    
+    .download-stats {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+    
+    .download-stat-value {
+        font-size: 2rem;
+    }
+    
+    .download-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .download-actions .btn {
+        width: 100%;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    /* Screenshot */
+    .screenshot-wrapper {
+        border-radius: var(--radius-md);
+    }
+}
+
+/* Small mobile (480px and below) */
+@media (max-width: 480px) {
+    /* Typography */
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .download-title {
+        font-size: 1.75rem;
+    }
+    
+    /* Logo */
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .logo-text {
+        font-size: 1.125rem;
+    }
+    
+    /* Buttons */
+    .btn-large {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9375rem;
+    }
+    
+    .btn-xl {
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+    }
+    
+    /* Card */
+    .card {
+        padding: var(--spacing-lg);
+    }
+    
+    .feature-card {
+        padding: var(--spacing-md);
+    }
+    
+    /* Form */
+    .contact-form {
+        padding: var(--spacing-lg);
+    }
+    
+    /* Stats */
+    .download-stat-value {
+        font-size: 1.75rem;
+    }
+    
+    .download-stat-label {
+        font-size: 0.8125rem;
+    }
+}
+
+/* Large desktop (1200px and above) */
+@media (min-width: 1200px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.75rem;
+    }
+    
+    .download-title {
+        font-size: 3rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .mobile-menu,
+    .hero-cta,
+    .download-actions,
+    .contact-form,
+    .footer {
+        display: none;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .card,
+    .feature-card,
+    .content-box {
+        border-width: 2px;
+    }
+    
+    .btn {
+        border-width: 2px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
