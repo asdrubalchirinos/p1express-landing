@@ -1,3 +1,6 @@
+# Documentation files (keep private)
+DEPLOYMENT.md
+
 # Dependencies
 node_modules/
 
