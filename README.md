@@ -1,4 +1,4 @@
-># P1.express App
+# P1.express App
 
 A lightweight, offline-first implementation of the P1.express task management method.
 
@@ -13,7 +13,7 @@ A lightweight, offline-first implementation of the P1.express task management me
 
 ## � Get Started
 
-[Download the app](downloads/p1express-app.zip) and open the HTML file in any modern browser.
+[Download the app](downloads/p1-express-v1.0.4.zip) and open the HTML file in any modern browser.
 
 ## 📖 About P1.express
 
