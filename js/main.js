@@ -168,7 +168,7 @@
     
     // Download Button Click Tracking
     function initDownloadTracking() {
-        const downloadButtons = document.querySelectorAll('a[download="p1-express-v1.0.4.zip"]');
+        const downloadButtons = document.querySelectorAll('a[download="p1-express-v1.0.4.html"]');
         
         downloadButtons.forEach(button => {
             button.addEventListener('click', function() {
