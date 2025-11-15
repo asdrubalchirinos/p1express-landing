@@ -139,6 +139,10 @@ body {
     border: none;
     cursor: pointer;
     padding: var(--spacing-xs);
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
 }
 
 .hamburger {
@@ -148,24 +152,26 @@ body {
     display: block;
     position: relative;
     transition: background-color var(--transition-fast);
+    flex-shrink: 0;
 }
 
 .hamburger::before,
 .hamburger::after {
     content: '';
     position: absolute;
-    width: 24px;
-    height: 2px;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-text-primary);
     transition: transform var(--transition-fast);
+    left: 0;
 }
 
 .hamburger::before {
-    top: -8px;
+    top: -6px;
 }
 
 .hamburger::after {
-    top: 8px;
+    top: 6px;
 }
 
 .mobile-menu {
@@ -198,7 +204,7 @@ body {
     }
     
     .mobile-menu-toggle {
-        display: block;
+        display: flex !important;
     }
 }
 
